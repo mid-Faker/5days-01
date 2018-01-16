@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style>
+			
+			.item {
+				height: 300px;
+				width: 200px;
+				box-shadow: 0px 0px 6px darkgray;
+				
+				position: relative;
+				
+				overflow: hidden;
+				
+				display: inline-block;
+			}
+			
+			.photo {
+				height: 200px;
+				width: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+			}
+			
+			.desc {
+				height: 100px;
+				width: 100%;
+				/*background-color: #80CBC4;*/
+				font-family: "微软雅黑";
+			}
+			
+			.title {
+				font-size: 28px;
+				color: #616161;
+			}
+			
+			.detail {
+				margin-top: 10px;
+				font-size: 14px;
+				color :#757575
+			}
+			.price {
+				color: #F57C00;
+				text-align: right;
+				padding-right: 10px;
+				margin-top: 10px;
+			}
+			
+			.buy{
+				height: 100px;
+				width: 100%;
+				background-color: darkgray;
+				
+				opacity: .8;
+				
+				position: absolute;
+				
+				transition: all .3s ease-in-out; 
+			}
+			
+			.item:hover .buy {
+				transform: translateY(-100px)
+				
+			}
+			
+			.border {
+				border: 1px solid red;
+			}
+			
+		</style>
+		
+		
+	</head>
+	<body>
+		
+		
+		<div class="item" >
+			<div class="photo" style="background-image: url(../img/product-auto/tesla-roadster-2018-02.jpg);"></div>
+			<div class="desc">
+				<div class="title">Tesal Model3</div>
+				<div class="detail">tesal Model3 , 0-100KM 5S</div>
+				<div class="price">$50,000</div>
+			</div>
+			<div class="buy"></div>
+		</div>
+		
+		
+		<div class="item" >
+			<div class="photo" style="background-image: url(../img/product-auto/benz-amg-s63-01.jpg);"></div>
+			<div class="desc">
+				<div class="title">Bean S AMG</div>
+				<div class="detail">AMG S Class , 0-100KM 3.6S</div>
+				<div class="price">$75,800</div>
+			</div>
+			<div class="buy"></div>
+		</div>
+		
+	</body>
+</html>
